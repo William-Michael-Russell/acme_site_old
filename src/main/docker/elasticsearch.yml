@@ -1,0 +1,10 @@
+version: '2'
+services:
+    acme_site-elasticsearch:
+        container_name: acme_site-elasticsearch
+        image: elasticsearch:1.7.5
+        # volumes:
+        #     - ~/volumes/jhipster/acme_site/elasticsearch/:/usr/share/elasticsearch/data/
+        ports:
+            - 9200:9200
+            - 9300:9300

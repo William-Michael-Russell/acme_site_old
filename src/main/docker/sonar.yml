@@ -1,0 +1,8 @@
+version: '2'
+services:
+    acme_site-sonar:
+        container_name: acme_site-sonar
+        image: sonarqube:5.3
+        ports:
+            - 9000:9000
+            - 9092:9092

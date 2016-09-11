@@ -1,0 +1,44 @@
+{
+  "generator-jhipster": {
+    "jhipsterVersion": "3.1.0",
+    "baseName": "acme_site",
+    "packageName": "net.testaholic.acme",
+    "packageFolder": "net/testaholic/acme",
+    "serverPort": "8080",
+    "authenticationType": "session",
+    "hibernateCache": "no",
+    "clusteredHttpSession": "no",
+    "websocket": "no",
+    "databaseType": "sql",
+    "devDatabaseType": "h2Disk",
+    "prodDatabaseType": "mysql",
+    "searchEngine": "elasticsearch",
+    "buildTool": "gradle",
+    "enableSocialSignIn": true,
+    "rememberMeKey": "ab42e94017748dbc6ab6d7e73ad74c42a29aa261",
+    "useSass": false,
+    "applicationType": "monolith",
+    "testFrameworks": [
+      "cucumber"
+    ],
+    "jhiPrefix": "jhi",
+    "enableTranslation": true,
+    "nativeLanguage": "en",
+    "languages": [
+      "en",
+      "zh-cn",
+      "fr",
+      "de",
+      "el",
+      "hi",
+      "hu",
+      "it",
+      "ja",
+      "ko",
+      "pt-br",
+      "ru",
+      "es",
+      "tr"
+    ]
+  }
+}

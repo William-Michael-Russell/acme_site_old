@@ -1,0 +1,21 @@
+version: '2'
+services:
+    acme_site-app:
+        image: acme_site
+        external_links:
+            - acme_site-mysql:mysql
+            - acme_site-elasticsearch:elasticsearch
+        environment:
+            - SPRING_PROFILES_ACTIVE=prod
+            - SPRING_DATASOURCE_URL=jdbc:mysql://mysql:3306/acme_site?useUnicode=true&characterEncoding=utf8&useSSL=false
+            - SPRING_DATA_ELASTICSEARCH_CLUSTER_NODES=elasticsearch:9300
+        ports:
+            - 8080:8080
+    acme_site-mysql:
+        extends:
+            file: mysql.yml
+            service: acme_site-mysql
+    acme_site-elasticsearch:
+        extends:
+            file: elasticsearch.yml
+            service: acme_site-elasticsearch

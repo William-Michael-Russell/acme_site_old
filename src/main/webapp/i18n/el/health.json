@@ -1,0 +1,28 @@
+{
+    "health": {
+        "title": "Έλεγχοι υγείας",
+        "refresh.button": "Ανανέωση",
+        "stacktrace": "Stacktrace",
+        "details": {
+            "details": "Λεπτομέρειες",
+            "properties": "Ιδιότητες",
+            "name": "Ονομασία",
+            "value": "Τιμή",
+            "error": "Σφάλμα"
+        },
+        "indicator": {
+            "diskSpace": "Χώρος σκληρού δίσκου",
+            "mail": "Email",
+            "elasticsearch": "Elasticsearch",
+            "db": "Βάση Δεδομένων"
+        },
+        "table": {
+            "service": "Υπηρεσία",
+            "status": "Κατάσταση"
+        },
+        "status": {
+            "UP": "ΠΑΝΩ",
+            "DOWN": "ΚΑΤΩ"
+        }
+    }
+}
