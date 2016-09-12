@@ -131,3 +131,9 @@ Desktop.ini
 # ESLint
 ######################
 .eslintcache
+
+#####################
+#    Configs 
+####################
+application-prod.yml
+application-dev.yml
