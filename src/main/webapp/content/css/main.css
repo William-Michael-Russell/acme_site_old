@@ -72,7 +72,7 @@ Browser Upgrade Prompt
     display: inline-block;
     width: 347px;
     height: 497px;
-    background: url("../images/hipster.png") no-repeat center top;
+    background: url("../images/acme_image.png") no-repeat center top;
     background-size: contain;
 }
 
@@ -94,7 +94,7 @@ only screen and (        min-device-pixel-ratio: 2),
 only screen and (                min-resolution: 192dpi),
 only screen and (                min-resolution: 2dppx) {
     .hipster {
-        background: url("../images/hipster2x.png") no-repeat center top;
+        background: url("../images/inventory.png") no-repeat center top;
         background-size: contain;
     }
 }
@@ -265,12 +265,12 @@ Social Buttons
 /* Makes toolbar not wrap on smaller screens
  http://www.sketchingwithcss.com/samplechapter/cheatsheet.html#right */
 .flex-btn-group-container {
-   display: -webkit-flex;
-   display: flex;
-   -webkit-flex-direction: row;
-   flex-direction: row;
-   -webkit-justify-content: flex-end;
-   justify-content: flex-end;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    -webkit-justify-content: flex-end;
+    justify-content: flex-end;
 }
 
 .jh-table > tbody > tr > td {
@@ -310,3 +310,38 @@ Social Buttons
 /* jhipster-needle-scss-add-main JHipster will add new css style */
 
 /* jhipster-needle-css-add-main JHipster will add new css style */
+
+
+/*Custom CSS*/
+html {
+    position: relative;
+    min-height: 100%;
+}
+body {
+    /* Margin bottom by footer height */
+    margin-bottom: 60px;
+}
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    /* Set the fixed height of the footer here */
+    height: 60px;
+    background-color: #f5f5f5;
+}
+
+.red-tint{
+    background-color: #f0e4e3;
+}
+.blk {
+    background-color: black;
+}
+
+a > span{
+    color: black;
+    border: medium;
+}
+.a .span{
+    color: white;
+}
+

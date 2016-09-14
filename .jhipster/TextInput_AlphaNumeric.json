@@ -1,0 +1,40 @@
+{
+    "relationships": [],
+    "fields": [
+        {
+            "fieldName": "alphaNumericField",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required",
+                "minlength",
+                "maxlength"
+            ],
+            "fieldValidateRulesMinlength": "0",
+            "fieldValidateRulesMaxlength": "15"
+        },
+        {
+            "fieldName": "numericField",
+            "fieldType": "Integer",
+            "fieldValidateRules": [
+                "required",
+                "min",
+                "max"
+            ],
+            "fieldValidateRulesMin": "0",
+            "fieldValidateRulesMax": "15"
+        },
+        {
+            "fieldName": "numeric2Field",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "maxlength"
+            ],
+            "fieldValidateRulesMaxlength": "15"
+        }
+    ],
+    "changelogDate": "20160914052014",
+    "dto": "no",
+    "service": "no",
+    "entityTableName": "text_input_alpha_numeric",
+    "pagination": "no"
+}

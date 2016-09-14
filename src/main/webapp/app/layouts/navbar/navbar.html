@@ -1,13 +1,14 @@
-<nav class="navbar navbar-default" role="navigation">
+<nav class="navbar navbar-default red-tint" role="navigation">
     <div class="container">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle" ng-click="vm.toggleNavbar()">
                 <span class="sr-only">Toggle navigation</span>
+
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#/" ng-click="vm.collapseNavbar()"><span translate="global.title">Acme_site</span> <span class="navbar-version">v{{VERSION}}</span></a>
+            <a class="navbar-brand" href="#/" ng-click="vm.collapseNavbar()"><span class="red-tint" translate="global.title">Acme_site</span> <span class="navbar-version">v{{VERSION}}</span></a>
         </div>
         <div class="navbar-collapse" uib-collapse="vm.isNavbarCollapsed" ng-switch="vm.isAuthenticated()">
             <ul class="nav navbar-nav navbar-right">
@@ -29,6 +30,11 @@
                         </span>
                     </a>
                     <ul class="dropdown-menu" uib-dropdown-menu>
+                        <li ui-sref-active="active" >
+                            <a ui-sref="text-input-alpha-numeric" ng-click="vm.collapseNavbar()">
+                                <span class="glyphicon glyphicon-asterisk"></span>&nbsp;
+                            </a>
+                        </li>
                         <!-- jhipster-needle-add-entity-to-menu - JHipster will add entities to the menu here -->
                     </ul>
                 </li>
@@ -73,6 +79,7 @@
                                 <span translate="global.menu.account.login">Sign in</span>
                             </a>
                         </li>
+
                         <li ui-sref-active="active" ng-switch-when="false">
                             <a ui-sref="register" ng-click="vm.collapseNavbar()">
                                 <span class="glyphicon glyphicon-plus-sign"></span>&nbsp;
