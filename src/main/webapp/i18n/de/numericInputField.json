@@ -1,0 +1,23 @@
+{
+    "acmeSiteApp": {
+        "numericInputField" : {
+            "home": {
+                "title": "Numeric Input Fields",
+                "createLabel": "Numeric Input Field erstellen",
+                "createOrEditLabel": "Numeric Input Field erstellen oder bearbeiten",
+                "search": "Suche nach Numeric Input Field"
+            },
+            "created": "Numeric Input Field erstellt mit ID {{ param }}",
+            "updated": "Numeric Input Field aktualisiert mit ID {{ param }}",
+            "deleted": "Numeric Input Field gelöscht mit ID {{ param }}",
+            "delete": {
+                "question": "Soll Numeric Input Field {{ id }} wirklich dauerhaft gejöscht werden?"
+            },
+            "detail": {
+                "title": "Numeric Input Field"
+            },
+            "numericField": "Numeric Field",
+            "user": "User"
+        }
+    }
+}

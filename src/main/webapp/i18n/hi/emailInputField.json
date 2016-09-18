@@ -1,0 +1,23 @@
+{
+    "acmeSiteApp": {
+        "emailInputField" : {
+            "home": {
+                "title": "EmailInputFields",
+                "createLabel": "नया Email Input Field बनाएँ",
+                "createOrEditLabel": "Email Input Field बनाएँ या संपादित करें",
+                "search": "Email Input Field खोजें"
+            },
+            "created": "एक नया Email Input Field [identifier: {{ param }}] तैयार है",
+            "updated": "एक Email Input Field [identifier: {{ param }}] का अद्यतन हुआ है",
+            "deleted": "Email Input Field [identifier: {{ param }}] हटा दिया है",
+            "delete": {
+                "question": "Email Input Field [id: {{ id }}] हटाने की पुष्टि करें"
+            },
+            "detail": {
+                "title": "Email Input Field"
+            },
+            "emailField": "Email Field",
+            "login": "Login"
+        }
+    }
+}

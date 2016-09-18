@@ -1,0 +1,23 @@
+{
+    "acmeSiteApp": {
+        "fileUpload" : {
+            "home": {
+                "title": "FileUploads",
+                "createLabel": "नया File Upload बनाएँ",
+                "createOrEditLabel": "File Upload बनाएँ या संपादित करें",
+                "search": "File Upload खोजें"
+            },
+            "created": "एक नया File Upload [identifier: {{ param }}] तैयार है",
+            "updated": "एक File Upload [identifier: {{ param }}] का अद्यतन हुआ है",
+            "deleted": "File Upload [identifier: {{ param }}] हटा दिया है",
+            "delete": {
+                "question": "File Upload [id: {{ id }}] हटाने की पुष्टि करें"
+            },
+            "detail": {
+                "title": "File Upload"
+            },
+            "fieldField": "Field Field",
+            "user": "User"
+        }
+    }
+}

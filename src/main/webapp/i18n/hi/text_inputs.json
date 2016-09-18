@@ -1,0 +1,21 @@
+{
+    "acmeSiteApp": {
+        "text_inputs" : {
+            "home": {
+                "title": "Text_inputs",
+                "createLabel": "नया Text Inputs बनाएँ",
+                "createOrEditLabel": "Text Inputs बनाएँ या संपादित करें",
+                "search": "Text Inputs खोजें"
+            },
+            "created": "एक नया Text Inputs [identifier: {{ param }}] तैयार है",
+            "updated": "एक Text Inputs [identifier: {{ param }}] का अद्यतन हुआ है",
+            "deleted": "Text Inputs [identifier: {{ param }}] हटा दिया है",
+            "delete": {
+                "question": "Text Inputs [id: {{ id }}] हटाने की पुष्टि करें"
+            },
+            "detail": {
+                "title": "Text Inputs"
+            }
+        }
+    }
+}

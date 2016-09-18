@@ -18,26 +18,52 @@
                         <span class="hidden-sm" translate="global.menu.home">Home</span>
                     </a>
                 </li>
-                <!-- jhipster-needle-add-element-to-menu - JHipster will add new menu items here -->
-                <li ng-class="{active: vm.$state.includes('entity')}" ng-switch-when="true" uib-dropdown class="dropdown pointer">
-                    <a class="dropdown-toggle" uib-dropdown-toggle href="" id="entity-menu">
-                        <span>
-                            <span class="glyphicon glyphicon-th-list"></span>
-                            <span class="hidden-sm" translate="global.menu.entities.main">
-                                Entities
-                            </span>
-                            <b class="caret"></b>
-                        </span>
+
+                <li ui-sref-active="active">
+                    <a ui-sref="text-inputs" ng-click="vm.collapseNavbar()">
+                        <span class="glyphicon glyphicon-apple"></span>
+                        <span class="hidden-sm" translate="global.menu.entities.textInputs">GUI Testing</span>
                     </a>
-                    <ul class="dropdown-menu" uib-dropdown-menu>
+                </li>
+                <!-- jhipster-needle-add-element-to-menu - JHipster will add new menu items here -->
+                <!--<li ng-class="{active: vm.$state.includes('entity')}" ng-switch-when="true" uib-dropdown class="dropdown pointer">-->
+                    <!--<a class="dropdown-toggle" uib-dropdown-toggle href="" id="gui-testing">-->
+                        <!--<span>-->
+                            <!--<span class="glyphicon glyphicon-th-list"></span>-->
+                            <!--<span class="hidden-sm" translate="global.menu.entities.main">-->
+                                <!--GUI Testing-->
+                            <!--</span>-->
+                            <!--<b class="caret"></b>-->
+                        <!--</span>-->
+                    <!--</a>-->
+                    <!--<ul class="dropdown-menu" uib-dropdown-menu>-->
+                        <!--<li ui-sref-active="active" >-->
+                            <!--<a ui-sref="text-inputs" ng-click="vm.collapseNavbar()">-->
+                                <!--<span class="glyphicon glyphicon-asterisk"></span>&nbsp;-->
+                                <!--<span translate="global.menu.entities.textInputs">GUI Testing</span>-->
+                            <!--</a>-->
+                        <!--</li>-->
                         <li ui-sref-active="active" >
-                            <a ui-sref="text-input-alpha-numeric" ng-click="vm.collapseNavbar()">
+                            <a ui-sref="alpa-numeric-input-field" ng-click="vm.collapseNavbar()">
                                 <span class="glyphicon glyphicon-asterisk"></span>&nbsp;
+                                <span translate="global.menu.entities.alpaNumericInputField">Alpa Numeric Input Field</span>
                             </a>
                         </li>
-                        <!-- jhipster-needle-add-entity-to-menu - JHipster will add entities to the menu here -->
-                    </ul>
-                </li>
+                        <li ui-sref-active="active" >
+                            <a ui-sref="image-upload" ng-click="vm.collapseNavbar()">
+                                <span class="glyphicon glyphicon-asterisk"></span>&nbsp;
+                                <span translate="global.menu.entities.imageUpload">Image Upload</span>
+                            </a>
+                        </li>
+                        <li ui-sref-active="active" >
+                            <a ui-sref="file-upload" ng-click="vm.collapseNavbar()">
+                                <span class="glyphicon glyphicon-asterisk"></span>&nbsp;
+                                <span translate="global.menu.entities.fileUpload">File Upload</span>
+                            </a>
+                        </li>
+                        <!--&lt;!&ndash; jhipster-needle-add-entity-to-menu - JHipster will add entities to the menu here &ndash;&gt;-->
+                    <!--</ul>-->
+                <!--</li>-->
                 <li ng-class="{active: vm.$state.includes('account')}" uib-dropdown class="dropdown pointer">
                     <a class="dropdown-toggle" uib-dropdown-toggle href="" id="account-menu">
                         <span>

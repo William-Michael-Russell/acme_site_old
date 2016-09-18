@@ -1,0 +1,23 @@
+{
+    "acmeSiteApp": {
+        "emailInputField" : {
+            "home": {
+                "title": "Email Input Fields",
+                "createLabel": "Создать новый Email Input Field",
+                "createOrEditLabel": "Создать или отредактировать Email Input Field",
+                "search": "Найти Email Input Field"
+            },
+            "created": "Новый Email Input Field создан с идентификатором {{ param }}",
+            "updated": "Email Input Field обновлен с идентификатором {{ param }}",
+            "deleted": "Email Input Field удален с идентификатором {{ param }}",
+            "delete": {
+                "question": "Вы уверены что хотите удалить Email Input Field {{ id }}?"
+            },
+            "detail": {
+                "title": "Email Input Field"
+            },
+            "emailField": "Email Field",
+            "login": "Login"
+        }
+    }
+}

@@ -1,0 +1,23 @@
+{
+    "acmeSiteApp": {
+        "imageUpload" : {
+            "home": {
+                "title": "Image Uploads",
+                "createLabel": "Create a new Image Upload",
+                "createOrEditLabel": "Create or edit a Image Upload",
+                "search": "Search for Image Upload"
+            },
+            "created": "A new Image Upload is created with identifier {{ param }}",
+            "updated": "A Image Upload is updated with identifier {{ param }}",
+            "deleted": "A Image Upload is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete Image Upload {{ id }}?"
+            },
+            "detail": {
+                "title": "Image Upload"
+            },
+            "imageField": "Image Field",
+            "user": "User"
+        }
+    }
+}

@@ -1,0 +1,23 @@
+{
+    "acmeSiteApp": {
+        "imageUpload" : {
+            "home": {
+                "title": "ImageUploads",
+                "createLabel": "नया Image Upload बनाएँ",
+                "createOrEditLabel": "Image Upload बनाएँ या संपादित करें",
+                "search": "Image Upload खोजें"
+            },
+            "created": "एक नया Image Upload [identifier: {{ param }}] तैयार है",
+            "updated": "एक Image Upload [identifier: {{ param }}] का अद्यतन हुआ है",
+            "deleted": "Image Upload [identifier: {{ param }}] हटा दिया है",
+            "delete": {
+                "question": "Image Upload [id: {{ id }}] हटाने की पुष्टि करें"
+            },
+            "detail": {
+                "title": "Image Upload"
+            },
+            "imageField": "Image Field",
+            "user": "User"
+        }
+    }
+}

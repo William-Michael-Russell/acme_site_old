@@ -1,0 +1,28 @@
+{
+    "relationships": [
+        {
+            "relationshipName": "user",
+            "otherEntityName": "user",
+            "relationshipType": "many-to-one",
+            "otherEntityField": "login"
+        }
+    ],
+    "fields": [
+        {
+            "fieldName": "alphaNumericField",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required",
+                "minlength",
+                "maxlength"
+            ],
+            "fieldValidateRulesMinlength": "1",
+            "fieldValidateRulesMaxlength": "20"
+        }
+    ],
+    "changelogDate": "20160918070255",
+    "dto": "no",
+    "service": "no",
+    "entityTableName": "alpa_numeric_input_field",
+    "pagination": "pager"
+}

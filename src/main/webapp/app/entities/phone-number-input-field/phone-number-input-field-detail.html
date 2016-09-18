@@ -1,0 +1,23 @@
+
+<div>
+    <h2><span translate="acmeSiteApp.phoneNumberInputField.detail.title">Phone Number Input Field</span> {{vm.phoneNumberInputField.id}}</h2>
+    <hr>
+    <dl class="dl-horizontal">
+        <dt><span translate="acmeSiteApp.phoneNumberInputField.phoneNumberField">Phone Number Field</span></dt>
+        <dd>
+            <span>{{vm.phoneNumberInputField.phoneNumberField}}</span>
+        </dd>
+        <hr>
+        <dt><span translate="acmeSiteApp.phoneNumberInputField.user">User</span></dt>
+        <dd>
+            {{vm.phoneNumberInputField.user.login}}
+        </dd>
+        <hr>
+    </dl>
+
+    <button type="submit"
+            onclick="window.history.back()"
+            class="btn btn-info">
+        <span class="glyphicon glyphicon-arrow-left"></span>&nbsp;<span translate="entity.action.back"> Back</span>
+    </button>
+</div>

@@ -1,0 +1,69 @@
+
+<form name="editForm" role="form" novalidate ng-submit="vm.save()" show-validation>
+
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"
+                ng-click="vm.clear()">&times;</button>
+        <h4 class="modal-title" id="myFileUploadLabel" translate="acmeSiteApp.fileUpload.home.createOrEditLabel">Create or edit a File Upload</h4>
+    </div>
+    <div class="modal-body">
+        <jhi-alert-error></jhi-alert-error>
+        <div class="form-group" ng-show="vm.fileUpload.id">
+            <label for="id" translate="global.field.id">ID</label>
+            <input type="text" class="form-control" id="id" name="id"
+                    ng-model="vm.fileUpload.id" readonly />
+        </div>
+        <div class="form-group" ngf-drop ngf-change="vm.setFieldField($file, vm.fileUpload)">
+            <label class="control-label" translate="acmeSiteApp.fileUpload.fieldField" for="field_fieldField">Field Field</label>
+            <div>
+                <div class="help-block clearfix">
+                    <a class="pull-left" ng-click="vm.openFile(vm.fileUpload.fieldFieldContentType, vm.fileUpload.fieldField)" ng-if="vm.fileUpload.fieldField" target="_blank">open</a><br>
+                    <span class="pull-left">{{vm.fileUpload.fieldFieldContentType}}, {{byteSize(vm.fileUpload.fieldField)}}</span>
+                    <button ng-click="vm.fileUpload.fieldField=null;vm.fileUpload.fieldFieldContentType=null;"
+                            ng-if="vm.fileUpload.fieldField"
+                            class="btn btn-default btn-xs pull-right">
+                        <span class="glyphicon glyphicon-remove"></span>
+                    </button>
+                </div>
+                <button type="file" ngf-select class="btn btn-default btn-block"
+                        ngf-change="vm.setFieldField($file, vm.fileUpload)" translate="entity.action.addblob">
+                    Add blob
+                </button>
+            </div>
+            <input type="hidden" class="form-control" name="fieldField" id="field_fieldField"
+                    ng-model="vm.fileUpload.fieldField"
+                    required minbytes="1" maxbytes="5000000" />
+            <input type="hidden" class="form-control" name="fieldFieldContentType" id="field_fieldFieldContentType"
+                    ng-model="vm.fileUpload.fieldFieldContentType" />
+            <div ng-show="editForm.fieldField.$invalid">
+                <p class="help-block"
+                    ng-show="editForm.fieldField.$error.required" translate="entity.validation.required">
+                    This field is required.
+                </p>
+                <p class="help-block"
+                   ng-show="editForm.fieldField.$error.minbytes" translate="entity.validation.minbytes" translate-value-min="1">
+                    This field should be more than 1.
+                </p>
+                <p class="help-block"
+                   ng-show="editForm.fieldField.$error.maxbytes" translate="entity.validation.maxbytes" translate-value-max="5000000">
+                    This field cannot be more than 5000000.
+                </p>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label translate="acmeSiteApp.fileUpload.user" for="field_user">User</label>
+            <select class="form-control" id="field_user" name="user" ng-model="vm.fileUpload.user" ng-options="user as user.login for user in vm.users track by user.id">
+                <option value=""></option>
+            </select>
+        </div>
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal" ng-click="vm.clear()">
+            <span class="glyphicon glyphicon-ban-circle"></span>&nbsp;<span translate="entity.action.cancel">Cancel</span>
+        </button>
+        <button type="submit" ng-disabled="editForm.$invalid || isSaving" class="btn btn-primary">
+            <span class="glyphicon glyphicon-save"></span>&nbsp;<span translate="entity.action.save">Save</span>
+        </button>
+    </div>
+</form>

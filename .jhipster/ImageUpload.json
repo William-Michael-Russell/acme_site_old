@@ -1,0 +1,29 @@
+{
+    "relationships": [
+        {
+            "relationshipName": "user",
+            "otherEntityName": "user",
+            "relationshipType": "many-to-one",
+            "otherEntityField": "login"
+        }
+    ],
+    "fields": [
+        {
+            "fieldName": "imageField",
+            "fieldType": "byte[]",
+            "fieldTypeBlobContent": "image",
+            "fieldValidateRules": [
+                "required",
+                "minbytes",
+                "maxbytes"
+            ],
+            "fieldValidateRulesMinbytes": "1",
+            "fieldValidateRulesMaxbytes": 5000000
+        }
+    ],
+    "changelogDate": "20160918073050",
+    "dto": "no",
+    "service": "no",
+    "entityTableName": "image_upload",
+    "pagination": "pager"
+}

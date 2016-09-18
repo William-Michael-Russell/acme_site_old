@@ -1,0 +1,23 @@
+{
+    "acmeSiteApp": {
+        "fileUpload" : {
+            "home": {
+                "title": "File Uploads",
+                "createLabel": "Создать новый File Upload",
+                "createOrEditLabel": "Создать или отредактировать File Upload",
+                "search": "Найти File Upload"
+            },
+            "created": "Новый File Upload создан с идентификатором {{ param }}",
+            "updated": "File Upload обновлен с идентификатором {{ param }}",
+            "deleted": "File Upload удален с идентификатором {{ param }}",
+            "delete": {
+                "question": "Вы уверены что хотите удалить File Upload {{ id }}?"
+            },
+            "detail": {
+                "title": "File Upload"
+            },
+            "fieldField": "Field Field",
+            "user": "User"
+        }
+    }
+}

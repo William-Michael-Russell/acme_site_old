@@ -1,0 +1,23 @@
+{
+    "acmeSiteApp": {
+        "alpaNumericInputField" : {
+            "home": {
+                "title": "AlpaNumericInputFields",
+                "createLabel": "नया Alpa Numeric Input Field बनाएँ",
+                "createOrEditLabel": "Alpa Numeric Input Field बनाएँ या संपादित करें",
+                "search": "Alpa Numeric Input Field खोजें"
+            },
+            "created": "एक नया Alpa Numeric Input Field [identifier: {{ param }}] तैयार है",
+            "updated": "एक Alpa Numeric Input Field [identifier: {{ param }}] का अद्यतन हुआ है",
+            "deleted": "Alpa Numeric Input Field [identifier: {{ param }}] हटा दिया है",
+            "delete": {
+                "question": "Alpa Numeric Input Field [id: {{ id }}] हटाने की पुष्टि करें"
+            },
+            "detail": {
+                "title": "Alpa Numeric Input Field"
+            },
+            "alphaNumericField": "Alpha Numeric Field",
+            "user": "User"
+        }
+    }
+}

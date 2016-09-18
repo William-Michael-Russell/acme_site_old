@@ -1,0 +1,23 @@
+{
+    "acmeSiteApp": {
+        "phoneNumberInputField" : {
+            "home": {
+                "title": "Phone Number Input Fields",
+                "createLabel": "Phone Number Input Field erstellen",
+                "createOrEditLabel": "Phone Number Input Field erstellen oder bearbeiten",
+                "search": "Suche nach Phone Number Input Field"
+            },
+            "created": "Phone Number Input Field erstellt mit ID {{ param }}",
+            "updated": "Phone Number Input Field aktualisiert mit ID {{ param }}",
+            "deleted": "Phone Number Input Field gelöscht mit ID {{ param }}",
+            "delete": {
+                "question": "Soll Phone Number Input Field {{ id }} wirklich dauerhaft gejöscht werden?"
+            },
+            "detail": {
+                "title": "Phone Number Input Field"
+            },
+            "phoneNumberField": "Phone Number Field",
+            "user": "User"
+        }
+    }
+}

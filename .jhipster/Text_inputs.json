@@ -1,0 +1,9 @@
+{
+    "relationships": [],
+    "fields": [],
+    "changelogDate": "20160918033054",
+    "dto": "no",
+    "service": "no",
+    "entityTableName": "text_inputs",
+    "pagination": "pager"
+}

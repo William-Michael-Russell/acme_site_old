@@ -5,6 +5,21 @@
     xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.4.xsd">
 
     <include file="classpath:config/liquibase/changelog/00000000000000_initial_schema.xml" relativeToChangelogFile="false"/>
+    <include file="classpath:config/liquibase/changelog/20160918033054_added_entity_Text_inputs.xml" relativeToChangelogFile="false"/>
+    <include file="classpath:config/liquibase/changelog/20160918034533_added_entity_EmailInputField.xml" relativeToChangelogFile="false"/>
+    <include file="classpath:config/liquibase/changelog/20160918053830_added_entity_PhoneNumberInputField.xml" relativeToChangelogFile="false"/>
+    <include file="classpath:config/liquibase/changelog/20160918060546_added_entity_PasswordInputField.xml" relativeToChangelogFile="false"/>
+    <include file="classpath:config/liquibase/changelog/20160918070138_added_entity_NumericInputField.xml" relativeToChangelogFile="false"/>
+    <include file="classpath:config/liquibase/changelog/20160918070255_added_entity_AlpaNumericInputField.xml" relativeToChangelogFile="false"/>
+    <include file="classpath:config/liquibase/changelog/20160918073050_added_entity_ImageUpload.xml" relativeToChangelogFile="false"/>
+    <include file="classpath:config/liquibase/changelog/20160918074041_added_entity_FileUpload.xml" relativeToChangelogFile="false"/>
     <!-- jhipster-needle-liquibase-add-changelog - JHipster will add liquibase changelogs here -->
+    <include file="classpath:config/liquibase/changelog/20160918034533_added_entity_constraints_EmailInputField.xml" relativeToChangelogFile="false"/>
+    <include file="classpath:config/liquibase/changelog/20160918053830_added_entity_constraints_PhoneNumberInputField.xml" relativeToChangelogFile="false"/>
+    <include file="classpath:config/liquibase/changelog/20160918060546_added_entity_constraints_PasswordInputField.xml" relativeToChangelogFile="false"/>
+    <include file="classpath:config/liquibase/changelog/20160918070138_added_entity_constraints_NumericInputField.xml" relativeToChangelogFile="false"/>
+    <include file="classpath:config/liquibase/changelog/20160918070255_added_entity_constraints_AlpaNumericInputField.xml" relativeToChangelogFile="false"/>
+    <include file="classpath:config/liquibase/changelog/20160918073050_added_entity_constraints_ImageUpload.xml" relativeToChangelogFile="false"/>
+    <include file="classpath:config/liquibase/changelog/20160918074041_added_entity_constraints_FileUpload.xml" relativeToChangelogFile="false"/>
     <!-- jhipster-needle-liquibase-add-constraints-changelog - JHipster will add liquibase constraints changelogs here -->
 </databaseChangeLog>

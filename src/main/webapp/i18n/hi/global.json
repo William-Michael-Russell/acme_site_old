@@ -7,6 +7,14 @@
             "jhipster-needle-menu-add-element": "JHipster will add additional menu entries here (do not translate!)",
             "entities": {
                 "main": "एंटिटीज़",
+                "textInputs": "Text Inputs",
+                "emailInputField": "Email Input Field",
+                "phoneNumberInputField": "Phone Number Input Field",
+                "passwordInputField": "Password Input Field",
+                "numericInputField": "Numeric Input Field",
+                "alpaNumericInputField": "Alpa Numeric Input Field",
+                "imageUpload": "Image Upload",
+                "fileUpload": "File Upload",
                 "jhipster-needle-menu-add-entry": "JHipster will add additional entities here (do not translate!)"
             },
             "account": {

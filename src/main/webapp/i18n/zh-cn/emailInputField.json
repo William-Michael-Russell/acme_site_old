@@ -1,0 +1,23 @@
+{
+    "acmeSiteApp": {
+        "emailInputField" : {
+            "home": {
+                "title": "Email Input Fields",
+                "createLabel": "Create a new Email Input Field",
+                "createOrEditLabel": "Create or edit a Email Input Field",
+                "search": "Search for Email Input Field"
+            },
+            "created": "A new Email Input Field is created with identifier {{ param }}",
+            "updated": "A Email Input Field is updated with identifier {{ param }}",
+            "deleted": "A Email Input Field is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete Email Input Field {{ id }}?"
+            },
+            "detail": {
+                "title": "Email Input Field"
+            },
+            "emailField": "Email Field",
+            "login": "Login"
+        }
+    }
+}

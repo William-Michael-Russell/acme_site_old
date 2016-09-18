@@ -1,0 +1,31 @@
+{
+    "relationships": [
+        {
+            "relationshipName": "user",
+            "otherEntityName": "user",
+            "relationshipType": "many-to-one",
+            "otherEntityField": "login"
+        }
+    ],
+    "fields": [
+        {
+            "fieldName": "phoneNumberField",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required",
+                "minlength",
+                "maxlength",
+                "pattern"
+            ],
+            "fieldValidateRulesMinlength": "10",
+            "fieldValidateRulesMaxlength": "20",
+            "fieldValidateRulesPattern": "^[(]{0,1}[0-9]{3}[)]{0,1}[-\\s\\.]{0,1}[0-9]{3}[-\\s\\.]{0,1}[0-9]{4}$",
+            "fieldValidateRulesPatternJava": "^[(]{0,1}[0-9]{3}[)]{0,1}[-\\\\s\\\\.]{0,1}[0-9]{3}[-\\\\s\\\\.]{0,1}[0-9]{4}$"
+        }
+    ],
+    "changelogDate": "20160918053830",
+    "dto": "no",
+    "service": "no",
+    "entityTableName": "phone_number_input_field",
+    "pagination": "pager"
+}

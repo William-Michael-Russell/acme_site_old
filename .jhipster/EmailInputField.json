@@ -1,0 +1,28 @@
+{
+    "relationships": [
+        {
+            "relationshipName": "login",
+            "otherEntityName": "user",
+            "relationshipType": "many-to-one",
+            "otherEntityField": "login"
+        }
+    ],
+    "fields": [
+        {
+            "fieldName": "emailField",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required",
+                "minlength",
+                "maxlength"
+            ],
+            "fieldValidateRulesMinlength": "6",
+            "fieldValidateRulesMaxlength": "30"
+        }
+    ],
+    "changelogDate": "20160918034533",
+    "dto": "no",
+    "service": "no",
+    "entityTableName": "email_input_field",
+    "pagination": "pager"
+}

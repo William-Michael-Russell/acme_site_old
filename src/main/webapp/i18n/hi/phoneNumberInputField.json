@@ -1,0 +1,23 @@
+{
+    "acmeSiteApp": {
+        "phoneNumberInputField" : {
+            "home": {
+                "title": "PhoneNumberInputFields",
+                "createLabel": "नया Phone Number Input Field बनाएँ",
+                "createOrEditLabel": "Phone Number Input Field बनाएँ या संपादित करें",
+                "search": "Phone Number Input Field खोजें"
+            },
+            "created": "एक नया Phone Number Input Field [identifier: {{ param }}] तैयार है",
+            "updated": "एक Phone Number Input Field [identifier: {{ param }}] का अद्यतन हुआ है",
+            "deleted": "Phone Number Input Field [identifier: {{ param }}] हटा दिया है",
+            "delete": {
+                "question": "Phone Number Input Field [id: {{ id }}] हटाने की पुष्टि करें"
+            },
+            "detail": {
+                "title": "Phone Number Input Field"
+            },
+            "phoneNumberField": "Phone Number Field",
+            "user": "User"
+        }
+    }
+}

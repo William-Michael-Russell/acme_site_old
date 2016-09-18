@@ -1,0 +1,23 @@
+{
+    "acmeSiteApp": {
+        "fileUpload" : {
+            "home": {
+                "title": "File Uploads",
+                "createLabel": "File Upload erstellen",
+                "createOrEditLabel": "File Upload erstellen oder bearbeiten",
+                "search": "Suche nach File Upload"
+            },
+            "created": "File Upload erstellt mit ID {{ param }}",
+            "updated": "File Upload aktualisiert mit ID {{ param }}",
+            "deleted": "File Upload gelöscht mit ID {{ param }}",
+            "delete": {
+                "question": "Soll File Upload {{ id }} wirklich dauerhaft gejöscht werden?"
+            },
+            "detail": {
+                "title": "File Upload"
+            },
+            "fieldField": "Field Field",
+            "user": "User"
+        }
+    }
+}

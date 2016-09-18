@@ -1,0 +1,23 @@
+{
+    "acmeSiteApp": {
+        "numericInputField" : {
+            "home": {
+                "title": "NumericInputFields",
+                "createLabel": "नया Numeric Input Field बनाएँ",
+                "createOrEditLabel": "Numeric Input Field बनाएँ या संपादित करें",
+                "search": "Numeric Input Field खोजें"
+            },
+            "created": "एक नया Numeric Input Field [identifier: {{ param }}] तैयार है",
+            "updated": "एक Numeric Input Field [identifier: {{ param }}] का अद्यतन हुआ है",
+            "deleted": "Numeric Input Field [identifier: {{ param }}] हटा दिया है",
+            "delete": {
+                "question": "Numeric Input Field [id: {{ id }}] हटाने की पुष्टि करें"
+            },
+            "detail": {
+                "title": "Numeric Input Field"
+            },
+            "numericField": "Numeric Field",
+            "user": "User"
+        }
+    }
+}

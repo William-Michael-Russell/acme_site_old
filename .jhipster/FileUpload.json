@@ -1,0 +1,29 @@
+{
+    "relationships": [
+        {
+            "relationshipName": "user",
+            "otherEntityName": "user",
+            "relationshipType": "many-to-one",
+            "otherEntityField": "login"
+        }
+    ],
+    "fields": [
+        {
+            "fieldName": "fieldField",
+            "fieldType": "byte[]",
+            "fieldTypeBlobContent": "any",
+            "fieldValidateRules": [
+                "required",
+                "minbytes",
+                "maxbytes"
+            ],
+            "fieldValidateRulesMinbytes": "1",
+            "fieldValidateRulesMaxbytes": 5000000
+        }
+    ],
+    "changelogDate": "20160918074041",
+    "dto": "no",
+    "service": "no",
+    "entityTableName": "file_upload",
+    "pagination": "pager"
+}

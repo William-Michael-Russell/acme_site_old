@@ -1,0 +1,21 @@
+{
+    "acmeSiteApp": {
+        "text_inputs" : {
+            "home": {
+                "title": "Text Inputs",
+                "createLabel": "Создать новый Text Inputs",
+                "createOrEditLabel": "Создать или отредактировать Text Inputs",
+                "search": "Найти Text Inputs"
+            },
+            "created": "Новый Text Inputs создан с идентификатором {{ param }}",
+            "updated": "Text Inputs обновлен с идентификатором {{ param }}",
+            "deleted": "Text Inputs удален с идентификатором {{ param }}",
+            "delete": {
+                "question": "Вы уверены что хотите удалить Text Inputs {{ id }}?"
+            },
+            "detail": {
+                "title": "Text Inputs"
+            }
+        }
+    }
+}

@@ -1,0 +1,23 @@
+{
+    "acmeSiteApp": {
+        "imageUpload" : {
+            "home": {
+                "title": "Image Uploads",
+                "createLabel": "Создать новый Image Upload",
+                "createOrEditLabel": "Создать или отредактировать Image Upload",
+                "search": "Найти Image Upload"
+            },
+            "created": "Новый Image Upload создан с идентификатором {{ param }}",
+            "updated": "Image Upload обновлен с идентификатором {{ param }}",
+            "deleted": "Image Upload удален с идентификатором {{ param }}",
+            "delete": {
+                "question": "Вы уверены что хотите удалить Image Upload {{ id }}?"
+            },
+            "detail": {
+                "title": "Image Upload"
+            },
+            "imageField": "Image Field",
+            "user": "User"
+        }
+    }
+}

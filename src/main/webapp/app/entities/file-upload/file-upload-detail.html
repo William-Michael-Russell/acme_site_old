@@ -1,0 +1,24 @@
+
+<div>
+    <h2><span translate="acmeSiteApp.fileUpload.detail.title">File Upload</span> {{vm.fileUpload.id}}</h2>
+    <hr>
+    <dl class="dl-horizontal">
+        <dt><span translate="acmeSiteApp.fileUpload.fieldField">Field Field</span></dt>
+        <dd>
+            <a ng-click="vm.openFile(vm.fileUpload.fieldFieldContentType, vm.fileUpload.fieldField)" ng-if="vm.fileUpload.fieldField" target="_blank">open</a>
+            <div>{{vm.fileUpload.fieldFieldContentType}}, {{vm.byteSize(vm.fileUpload.fieldField)}}</div>
+        </dd>
+        <hr>
+        <dt><span translate="acmeSiteApp.fileUpload.user">User</span></dt>
+        <dd>
+            {{vm.fileUpload.user.login}}
+        </dd>
+        <hr>
+    </dl>
+
+    <button type="submit"
+            onclick="window.history.back()"
+            class="btn btn-info">
+        <span class="glyphicon glyphicon-arrow-left"></span>&nbsp;<span translate="entity.action.back"> Back</span>
+    </button>
+</div>

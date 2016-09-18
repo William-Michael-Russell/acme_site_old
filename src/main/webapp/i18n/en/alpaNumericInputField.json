@@ -1,0 +1,23 @@
+{
+    "acmeSiteApp": {
+        "alpaNumericInputField" : {
+            "home": {
+                "title": "Alpa Numeric Input Fields",
+                "createLabel": "Create a new Alpa Numeric Input Field",
+                "createOrEditLabel": "Create or edit a Alpa Numeric Input Field",
+                "search": "Search for Alpa Numeric Input Field"
+            },
+            "created": "A new Alpa Numeric Input Field is created with identifier {{ param }}",
+            "updated": "A Alpa Numeric Input Field is updated with identifier {{ param }}",
+            "deleted": "A Alpa Numeric Input Field is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete Alpa Numeric Input Field {{ id }}?"
+            },
+            "detail": {
+                "title": "Alpa Numeric Input Field"
+            },
+            "alphaNumericField": "Alpha Numeric Field",
+            "user": "User"
+        }
+    }
+}
