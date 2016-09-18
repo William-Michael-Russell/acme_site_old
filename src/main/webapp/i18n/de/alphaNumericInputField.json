@@ -1,0 +1,23 @@
+{
+    "acmeSiteApp": {
+        "alphaNumericInputField" : {
+            "home": {
+                "title": "Alpha Numeric Input Fields",
+                "createLabel": "Alpha Numeric Input Field erstellen",
+                "createOrEditLabel": "Alpha Numeric Input Field erstellen oder bearbeiten",
+                "search": "Suche nach Alpha Numeric Input Field"
+            },
+            "created": "Alpha Numeric Input Field erstellt mit ID {{ param }}",
+            "updated": "Alpha Numeric Input Field aktualisiert mit ID {{ param }}",
+            "deleted": "Alpha Numeric Input Field gelöscht mit ID {{ param }}",
+            "delete": {
+                "question": "Soll Alpha Numeric Input Field {{ id }} wirklich dauerhaft gejöscht werden?"
+            },
+            "detail": {
+                "title": "Alpha Numeric Input Field"
+            },
+            "alphaNumericField": "Alpha Numeric Field",
+            "user": "User"
+        }
+    }
+}

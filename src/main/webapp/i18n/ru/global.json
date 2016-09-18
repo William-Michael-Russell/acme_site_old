@@ -12,7 +12,7 @@
                 "phoneNumberInputField": "Phone Number Input Field",
                 "passwordInputField": "Password Input Field",
                 "numericInputField": "Numeric Input Field",
-                "alpaNumericInputField": "Alpa Numeric Input Field",
+                "alphaNumericInputField": "Alpha Numeric Input Field",
                 "imageUpload": "Image Upload",
                 "fileUpload": "File Upload",
                 "jhipster-needle-menu-add-entry": "JHipster will add additional entities here (do not translate!)"

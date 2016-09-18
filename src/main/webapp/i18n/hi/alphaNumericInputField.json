@@ -1,0 +1,23 @@
+{
+    "acmeSiteApp": {
+        "alphaNumericInputField" : {
+            "home": {
+                "title": "AlphaNumericInputFields",
+                "createLabel": "नया Alpha Numeric Input Field बनाएँ",
+                "createOrEditLabel": "Alpha Numeric Input Field बनाएँ या संपादित करें",
+                "search": "Alpha Numeric Input Field खोजें"
+            },
+            "created": "एक नया Alpha Numeric Input Field [identifier: {{ param }}] तैयार है",
+            "updated": "एक Alpha Numeric Input Field [identifier: {{ param }}] का अद्यतन हुआ है",
+            "deleted": "Alpha Numeric Input Field [identifier: {{ param }}] हटा दिया है",
+            "delete": {
+                "question": "Alpha Numeric Input Field [id: {{ id }}] हटाने की पुष्टि करें"
+            },
+            "detail": {
+                "title": "Alpha Numeric Input Field"
+            },
+            "alphaNumericField": "Alpha Numeric Field",
+            "user": "User"
+        }
+    }
+}
