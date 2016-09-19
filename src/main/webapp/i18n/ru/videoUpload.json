@@ -1,0 +1,23 @@
+{
+    "acmeSiteApp": {
+        "videoUpload" : {
+            "home": {
+                "title": "Video Uploads",
+                "createLabel": "Создать новый Video Upload",
+                "createOrEditLabel": "Создать или отредактировать Video Upload",
+                "search": "Найти Video Upload"
+            },
+            "created": "Новый Video Upload создан с идентификатором {{ param }}",
+            "updated": "Video Upload обновлен с идентификатором {{ param }}",
+            "deleted": "Video Upload удален с идентификатором {{ param }}",
+            "delete": {
+                "question": "Вы уверены что хотите удалить Video Upload {{ id }}?"
+            },
+            "detail": {
+                "title": "Video Upload"
+            },
+            "videoField": "Video Field",
+            "user": "User"
+        }
+    }
+}

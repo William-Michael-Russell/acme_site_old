@@ -1,0 +1,63 @@
+<script>
+
+    $(function(){
+        $("#checkboxMsgTrue").hide();
+        $("#checkboxMsgFalse").hide();
+    });
+
+    $('#field_radioCheckbox').click(function(){
+        if (this.checked)
+        {
+            $("#checkboxMsgTrue").show();
+            $("#checkboxMsgFalse").hide();
+        }else {
+            $("#checkboxMsgFalse").show();
+            $("#checkboxMsgTrue").hide();
+        }
+    });
+</script>
+
+
+<form name="editForm" role="form" novalidate ng-submit="vm.save()" show-validation>
+
+
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"
+                ng-click="vm.clear()">&times;</button>
+        <h4 class="modal-title" id="myRadioCheckboxFieldLabel" translate="acmeSiteApp.radioCheckboxField.home.createOrEditLabel">Create or edit a Radio Checkbox Field</h4>
+    </div>
+    <div class="modal-body">
+        <jhi-alert-error></jhi-alert-error>
+        <div class="form-group" ng-show="vm.radioCheckboxField.id">
+            <label for="id" translate="global.field.id">ID</label>
+            <input type="text" class="form-control" id="id" name="id"
+                    ng-model="vm.radioCheckboxField.id" readonly />
+        </div>
+        <div class="form-group">
+            <label class="control-label" translate="acmeSiteApp.radioCheckboxField.radioCheckbox" for="field_radioCheckbox">Radio Checkbox</label>
+            <h6>Checked is true, unchecked is false.</h6>
+            <input type="checkbox" class="form-control" name="radioCheckbox" id="field_radioCheckbox"
+                    ng-model="vm.radioCheckboxField.radioCheckbox"
+                     />
+            <div ng-show="editForm.radioCheckbox.$invalid">
+                <p class="help-block"
+                    ng-show="editForm.radioCheckbox.$error.required" translate="entity.validation.required">
+                    This field is required.
+                </p>
+            </div>
+        </div>
+        <p id="checkboxMsgTrue">You've selected the checkbox. This will save as "true" to the database.</p>
+        <p id="checkboxMsgFalse">You've un-selected the checkbox. This will save as "false" to the database.</p>
+
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal" ng-click="vm.clear()">
+            <span class="glyphicon glyphicon-ban-circle"></span>&nbsp;<span translate="entity.action.cancel">Cancel</span>
+        </button>
+        <button type="submit" ng-disabled="editForm.$invalid || isSaving" class="btn btn-primary">
+            <span class="glyphicon glyphicon-save"></span>&nbsp;<span translate="entity.action.save">Save</span>
+        </button>
+    </div>
+
+
+</form>

@@ -23,7 +23,7 @@ public class NumericInputField implements Serializable {
 
     @NotNull
     @Min(value = 1)
-    @Max(value = 20)
+    @Max(value = 21)
     @Column(name = "numeric_field", nullable = false)
     private Integer numericField;
 

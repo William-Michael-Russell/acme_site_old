@@ -1,0 +1,23 @@
+{
+    "acmeSiteApp": {
+        "videoUpload" : {
+            "home": {
+                "title": "VideoUploads",
+                "createLabel": "नया Video Upload बनाएँ",
+                "createOrEditLabel": "Video Upload बनाएँ या संपादित करें",
+                "search": "Video Upload खोजें"
+            },
+            "created": "एक नया Video Upload [identifier: {{ param }}] तैयार है",
+            "updated": "एक Video Upload [identifier: {{ param }}] का अद्यतन हुआ है",
+            "deleted": "Video Upload [identifier: {{ param }}] हटा दिया है",
+            "delete": {
+                "question": "Video Upload [id: {{ id }}] हटाने की पुष्टि करें"
+            },
+            "detail": {
+                "title": "Video Upload"
+            },
+            "videoField": "Video Field",
+            "user": "User"
+        }
+    }
+}

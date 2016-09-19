@@ -15,6 +15,9 @@
                 "alphaNumericInputField": "Alpha Numeric Input Field",
                 "imageUpload": "Image Upload",
                 "fileUpload": "File Upload",
+                "videoUpload": "Video Upload",
+                "audioUpload": "Audio Upload",
+                "radioCheckboxField": "Radio Checkbox Field",
                 "jhipster-needle-menu-add-entry": "JHipster will add additional entities here (do not translate!)"
             },
             "account": {
@@ -85,7 +88,7 @@
     },
     "entity": {
         "action": {
-            "addblob": "Add blob",
+            "addblob": "Add Something",
             "addimage": "Add image",
             "back": "Back",
             "cancel": "Cancel",

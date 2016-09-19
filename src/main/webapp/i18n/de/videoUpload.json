@@ -1,0 +1,23 @@
+{
+    "acmeSiteApp": {
+        "videoUpload" : {
+            "home": {
+                "title": "Video Uploads",
+                "createLabel": "Video Upload erstellen",
+                "createOrEditLabel": "Video Upload erstellen oder bearbeiten",
+                "search": "Suche nach Video Upload"
+            },
+            "created": "Video Upload erstellt mit ID {{ param }}",
+            "updated": "Video Upload aktualisiert mit ID {{ param }}",
+            "deleted": "Video Upload gelöscht mit ID {{ param }}",
+            "delete": {
+                "question": "Soll Video Upload {{ id }} wirklich dauerhaft gejöscht werden?"
+            },
+            "detail": {
+                "title": "Video Upload"
+            },
+            "videoField": "Video Field",
+            "user": "User"
+        }
+    }
+}

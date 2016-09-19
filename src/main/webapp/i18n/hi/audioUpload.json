@@ -1,0 +1,23 @@
+{
+    "acmeSiteApp": {
+        "audioUpload" : {
+            "home": {
+                "title": "AudioUploads",
+                "createLabel": "नया Audio Upload बनाएँ",
+                "createOrEditLabel": "Audio Upload बनाएँ या संपादित करें",
+                "search": "Audio Upload खोजें"
+            },
+            "created": "एक नया Audio Upload [identifier: {{ param }}] तैयार है",
+            "updated": "एक Audio Upload [identifier: {{ param }}] का अद्यतन हुआ है",
+            "deleted": "Audio Upload [identifier: {{ param }}] हटा दिया है",
+            "delete": {
+                "question": "Audio Upload [id: {{ id }}] हटाने की पुष्टि करें"
+            },
+            "detail": {
+                "title": "Audio Upload"
+            },
+            "audioField": "Audio Field",
+            "user": "User"
+        }
+    }
+}

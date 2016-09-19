@@ -1,0 +1,23 @@
+{
+    "acmeSiteApp": {
+        "radioCheckboxField" : {
+            "home": {
+                "title": "Radio Checkbox Fields",
+                "createLabel": "Создать новый Radio Checkbox Field",
+                "createOrEditLabel": "Создать или отредактировать Radio Checkbox Field",
+                "search": "Найти Radio Checkbox Field"
+            },
+            "created": "Новый Radio Checkbox Field создан с идентификатором {{ param }}",
+            "updated": "Radio Checkbox Field обновлен с идентификатором {{ param }}",
+            "deleted": "Radio Checkbox Field удален с идентификатором {{ param }}",
+            "delete": {
+                "question": "Вы уверены что хотите удалить Radio Checkbox Field {{ id }}?"
+            },
+            "detail": {
+                "title": "Radio Checkbox Field"
+            },
+            "radioCheckbox": "Radio Checkbox",
+            "user": "User"
+        }
+    }
+}

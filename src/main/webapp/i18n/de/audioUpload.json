@@ -1,0 +1,23 @@
+{
+    "acmeSiteApp": {
+        "audioUpload" : {
+            "home": {
+                "title": "Audio Uploads",
+                "createLabel": "Audio Upload erstellen",
+                "createOrEditLabel": "Audio Upload erstellen oder bearbeiten",
+                "search": "Suche nach Audio Upload"
+            },
+            "created": "Audio Upload erstellt mit ID {{ param }}",
+            "updated": "Audio Upload aktualisiert mit ID {{ param }}",
+            "deleted": "Audio Upload gelöscht mit ID {{ param }}",
+            "delete": {
+                "question": "Soll Audio Upload {{ id }} wirklich dauerhaft gejöscht werden?"
+            },
+            "detail": {
+                "title": "Audio Upload"
+            },
+            "audioField": "Audio Field",
+            "user": "User"
+        }
+    }
+}

@@ -345,3 +345,22 @@ a > span{
     color: white;
 }
 
+.checkbox div {
+    clear: both; }
+
+.checkbox p {
+    padding-left: 8px; }
+
+.checkbox fieldset.standard {
+    border-style: solid;
+    border-width: 1px; }
+
+.checkbox legend {
+    color: #3F51B5; }
+
+.checkbox legend code {
+    color: #3F51B5;
+    font-weight: normal; }
+
+.checkbox .ipsum {
+    color: saddlebrown; }

@@ -3,7 +3,9 @@ package net.testaholic.acme.web.rest;
 import com.codahale.metrics.annotation.Timed;
 import net.testaholic.acme.domain.AlphaNumericInputField;
 import net.testaholic.acme.repository.AlphaNumericInputFieldRepository;
+import net.testaholic.acme.repository.UserRepository;
 import net.testaholic.acme.repository.search.AlphaNumericInputFieldSearchRepository;
+import net.testaholic.acme.security.SecurityUtils;
 import net.testaholic.acme.web.rest.util.HeaderUtil;
 import net.testaholic.acme.web.rest.util.PaginationUtil;
 import org.slf4j.Logger;
@@ -37,6 +39,9 @@ public class AlphaNumericInputFieldResource {
     private final Logger log = LoggerFactory.getLogger(AlphaNumericInputFieldResource.class);
 
     @Inject
+    private UserRepository userRepository;
+
+    @Inject
     private AlphaNumericInputFieldRepository alphaNumericInputFieldRepository;
 
     @Inject
@@ -58,6 +63,7 @@ public class AlphaNumericInputFieldResource {
         if (alphaNumericInputField.getId() != null) {
             return ResponseEntity.badRequest().headers(HeaderUtil.createFailureAlert("alphaNumericInputField", "idexists", "A new alphaNumericInputField cannot already have an ID")).body(null);
         }
+        alphaNumericInputField.setUser(userRepository.findOneByLogin(SecurityUtils.getCurrentUserLogin()).get());
         AlphaNumericInputField result = alphaNumericInputFieldRepository.save(alphaNumericInputField);
         alphaNumericInputFieldSearchRepository.save(result);
         return ResponseEntity.created(new URI("/api/alpha-numeric-input-fields/" + result.getId()))
@@ -104,7 +110,7 @@ public class AlphaNumericInputFieldResource {
     public ResponseEntity<List<AlphaNumericInputField>> getAllAlphaNumericInputFields(Pageable pageable)
         throws URISyntaxException {
         log.debug("REST request to get a page of AlphaNumericInputFields");
-        Page<AlphaNumericInputField> page = alphaNumericInputFieldRepository.findAll(pageable);
+        Page<AlphaNumericInputField> page = alphaNumericInputFieldRepository.findByUserIsCurrentUser(pageable);
         HttpHeaders headers = PaginationUtil.generatePaginationHttpHeaders(page, "/api/alpha-numeric-input-fields");
         return new ResponseEntity<>(page.getContent(), headers, HttpStatus.OK);
     }

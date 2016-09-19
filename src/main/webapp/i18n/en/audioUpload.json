@@ -1,0 +1,23 @@
+{
+    "acmeSiteApp": {
+        "audioUpload" : {
+            "home": {
+                "title": "Audio Uploads",
+                "createLabel": "Create a new Audio Upload",
+                "createOrEditLabel": "Create or edit a Audio Upload",
+                "search": "Search for Audio Upload"
+            },
+            "created": "A new Audio Upload is created with identifier {{ param }}",
+            "updated": "A Audio Upload is updated with identifier {{ param }}",
+            "deleted": "A Audio Upload is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete Audio Upload {{ id }}?"
+            },
+            "detail": {
+                "title": "Audio Upload"
+            },
+            "audioField": "Audio Field",
+            "user": "User"
+        }
+    }
+}

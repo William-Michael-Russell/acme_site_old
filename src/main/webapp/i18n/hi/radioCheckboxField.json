@@ -1,0 +1,23 @@
+{
+    "acmeSiteApp": {
+        "radioCheckboxField" : {
+            "home": {
+                "title": "RadioCheckboxFields",
+                "createLabel": "नया Radio Checkbox Field बनाएँ",
+                "createOrEditLabel": "Radio Checkbox Field बनाएँ या संपादित करें",
+                "search": "Radio Checkbox Field खोजें"
+            },
+            "created": "एक नया Radio Checkbox Field [identifier: {{ param }}] तैयार है",
+            "updated": "एक Radio Checkbox Field [identifier: {{ param }}] का अद्यतन हुआ है",
+            "deleted": "Radio Checkbox Field [identifier: {{ param }}] हटा दिया है",
+            "delete": {
+                "question": "Radio Checkbox Field [id: {{ id }}] हटाने की पुष्टि करें"
+            },
+            "detail": {
+                "title": "Radio Checkbox Field"
+            },
+            "radioCheckbox": "Radio Checkbox",
+            "user": "User"
+        }
+    }
+}

@@ -1,0 +1,63 @@
+
+<form name="editForm" role="form" novalidate ng-submit="vm.save()" show-validation>
+
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"
+                ng-click="vm.clear()">&times;</button>
+        <h4 class="modal-title" id="myVideoUploadLabel" translate="acmeSiteApp.videoUpload.home.createOrEditLabel">Create or edit a Video Upload</h4>
+    </div>
+    <div class="modal-body">
+        <jhi-alert-error></jhi-alert-error>
+        <div class="form-group" ng-show="vm.videoUpload.id">
+            <label for="id" translate="global.field.id">ID</label>
+            <input type="text" class="form-control" id="id" name="id"
+                    ng-model="vm.videoUpload.id" readonly />
+        </div>
+        <div class="form-group" ngf-drop ngf-change="vm.setVideoField($file, vm.videoUpload)">
+            <label class="control-label" translate="acmeSiteApp.videoUpload.videoField" for="field_videoField">Video Field</label>
+            <div>
+                <div class="help-block clearfix">
+                    <a class="pull-left" ng-click="vm.openFile(vm.videoUpload.videoFieldContentType, vm.videoUpload.videoField)" ng-if="vm.videoUpload.videoField" target="_blank">open</a><br>
+                    <span class="pull-left">{{vm.videoUpload.videoFieldContentType}}, {{byteSize(vm.videoUpload.videoField)}}</span>
+                    <button ng-click="vm.videoUpload.videoField=null;vm.videoUpload.videoFieldContentType=null;"
+                            ng-if="vm.videoUpload.videoField"
+                            class="btn btn-default btn-xs pull-right">
+                        <span class="glyphicon glyphicon-remove"></span>
+                    </button>
+                </div>
+                <button type="video/*" ngf-select class="btn btn-default btn-block"
+                        ngf-change="vm.setVideoField($file, vm.videoUpload)" translate="entity.action.addblob">
+                    Add blob
+                </button>
+            </div>
+            <input type="hidden" class="form-control" name="videoField" id="field_videoField"
+                    ng-model="vm.videoUpload.videoField"
+                    required minbytes="1" maxbytes="5000000" />
+            <input type="hidden" class="form-control" name="videoFieldContentType" id="field_videoFieldContentType"
+                    ng-model="vm.videoUpload.videoFieldContentType" />
+            <div ng-show="editForm.videoField.$invalid">
+                <p class="help-block"
+                    ng-show="editForm.videoField.$error.required" translate="entity.validation.required">
+                    This field is required.
+                </p>
+                <p class="help-block"
+                   ng-show="editForm.videoField.$error.minbytes" translate="entity.validation.minbytes" translate-value-min="1">
+                    This field should be more than 1.
+                </p>
+                <p class="help-block"
+                   ng-show="editForm.videoField.$error.maxbytes" translate="entity.validation.maxbytes" translate-value-max="5000000">
+                    This field cannot be more than 5000000.
+                </p>
+            </div>
+        </div>
+
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal" ng-click="vm.clear()">
+            <span class="glyphicon glyphicon-ban-circle"></span>&nbsp;<span translate="entity.action.cancel">Cancel</span>
+        </button>
+        <button type="submit" ng-disabled="editForm.$invalid || isSaving" class="btn btn-primary">
+            <span class="glyphicon glyphicon-save"></span>&nbsp;<span translate="entity.action.save">Save</span>
+        </button>
+    </div>
+</form>

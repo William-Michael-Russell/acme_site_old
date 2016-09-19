@@ -13,6 +13,9 @@
     <include file="classpath:config/liquibase/changelog/20160918070255_added_entity_AlphaNumericInputField.xml" relativeToChangelogFile="false"/>
     <include file="classpath:config/liquibase/changelog/20160918073050_added_entity_ImageUpload.xml" relativeToChangelogFile="false"/>
     <include file="classpath:config/liquibase/changelog/20160918074041_added_entity_FileUpload.xml" relativeToChangelogFile="false"/>
+    <include file="classpath:config/liquibase/changelog/20160919020417_added_entity_VideoUpload.xml" relativeToChangelogFile="false"/>
+    <include file="classpath:config/liquibase/changelog/20160919021355_added_entity_AudioUpload.xml" relativeToChangelogFile="false"/>
+    <include file="classpath:config/liquibase/changelog/20160919022106_added_entity_RadioCheckboxField.xml" relativeToChangelogFile="false"/>
     <!-- jhipster-needle-liquibase-add-changelog - JHipster will add liquibase changelogs here -->
     <include file="classpath:config/liquibase/changelog/20160918034533_added_entity_constraints_EmailInputField.xml" relativeToChangelogFile="false"/>
     <include file="classpath:config/liquibase/changelog/20160918053830_added_entity_constraints_PhoneNumberInputField.xml" relativeToChangelogFile="false"/>
@@ -21,5 +24,8 @@
     <include file="classpath:config/liquibase/changelog/20160918070255_added_entity_constraints_AlphaNumericInputField.xml" relativeToChangelogFile="false"/>
     <include file="classpath:config/liquibase/changelog/20160918073050_added_entity_constraints_ImageUpload.xml" relativeToChangelogFile="false"/>
     <include file="classpath:config/liquibase/changelog/20160918074041_added_entity_constraints_FileUpload.xml" relativeToChangelogFile="false"/>
+    <include file="classpath:config/liquibase/changelog/20160919020417_added_entity_constraints_VideoUpload.xml" relativeToChangelogFile="false"/>
+    <include file="classpath:config/liquibase/changelog/20160919021355_added_entity_constraints_AudioUpload.xml" relativeToChangelogFile="false"/>
+    <include file="classpath:config/liquibase/changelog/20160919022106_added_entity_constraints_RadioCheckboxField.xml" relativeToChangelogFile="false"/>
     <!-- jhipster-needle-liquibase-add-constraints-changelog - JHipster will add liquibase constraints changelogs here -->
 </databaseChangeLog>

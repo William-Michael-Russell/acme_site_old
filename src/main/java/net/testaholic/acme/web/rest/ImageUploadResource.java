@@ -3,7 +3,9 @@ package net.testaholic.acme.web.rest;
 import com.codahale.metrics.annotation.Timed;
 import net.testaholic.acme.domain.ImageUpload;
 import net.testaholic.acme.repository.ImageUploadRepository;
+import net.testaholic.acme.repository.UserRepository;
 import net.testaholic.acme.repository.search.ImageUploadSearchRepository;
+import net.testaholic.acme.security.SecurityUtils;
 import net.testaholic.acme.web.rest.util.HeaderUtil;
 import net.testaholic.acme.web.rest.util.PaginationUtil;
 import org.slf4j.Logger;
@@ -35,13 +37,16 @@ import static org.elasticsearch.index.query.QueryBuilders.*;
 public class ImageUploadResource {
 
     private final Logger log = LoggerFactory.getLogger(ImageUploadResource.class);
-        
+
+    @Inject
+    private UserRepository userRepository;
+
     @Inject
     private ImageUploadRepository imageUploadRepository;
-    
+
     @Inject
     private ImageUploadSearchRepository imageUploadSearchRepository;
-    
+
     /**
      * POST  /image-uploads : Create a new imageUpload.
      *
@@ -58,6 +63,7 @@ public class ImageUploadResource {
         if (imageUpload.getId() != null) {
             return ResponseEntity.badRequest().headers(HeaderUtil.createFailureAlert("imageUpload", "idexists", "A new imageUpload cannot already have an ID")).body(null);
         }
+        imageUpload.setUser(userRepository.findOneByLogin(SecurityUtils.getCurrentUserLogin()).get());
         ImageUpload result = imageUploadRepository.save(imageUpload);
         imageUploadSearchRepository.save(result);
         return ResponseEntity.created(new URI("/api/image-uploads/" + result.getId()))
@@ -104,7 +110,7 @@ public class ImageUploadResource {
     public ResponseEntity<List<ImageUpload>> getAllImageUploads(Pageable pageable)
         throws URISyntaxException {
         log.debug("REST request to get a page of ImageUploads");
-        Page<ImageUpload> page = imageUploadRepository.findAll(pageable); 
+        Page<ImageUpload> page = imageUploadRepository.findByUserIsCurrentUser(pageable);
         HttpHeaders headers = PaginationUtil.generatePaginationHttpHeaders(page, "/api/image-uploads");
         return new ResponseEntity<>(page.getContent(), headers, HttpStatus.OK);
     }
