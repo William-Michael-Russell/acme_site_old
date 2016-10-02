@@ -2,21 +2,21 @@
     "acmeSiteApp": {
         "radioCheckboxField" : {
             "home": {
-                "title": "Radio Checkbox Fields",
-                "createLabel": "Radio Checkbox Field erstellen",
-                "createOrEditLabel": "Radio Checkbox Field erstellen oder bearbeiten",
-                "search": "Suche nach Radio Checkbox Field"
+                "title": "Checkbox Fields",
+                "createLabel": "Checkbox Field erstellen",
+                "createOrEditLabel": "Checkbox Field erstellen oder bearbeiten",
+                "search": "Suche nach Checkbox Field"
             },
-            "created": "Radio Checkbox Field erstellt mit ID {{ param }}",
-            "updated": "Radio Checkbox Field aktualisiert mit ID {{ param }}",
-            "deleted": "Radio Checkbox Field gelöscht mit ID {{ param }}",
+            "created": "Checkbox Field erstellt mit ID {{ param }}",
+            "updated": "Checkbox Field aktualisiert mit ID {{ param }}",
+            "deleted": "Checkbox Field gelöscht mit ID {{ param }}",
             "delete": {
-                "question": "Soll Radio Checkbox Field {{ id }} wirklich dauerhaft gejöscht werden?"
+                "question": "Soll Checkbox Field {{ id }} wirklich dauerhaft gejöscht werden?"
             },
             "detail": {
-                "title": "Radio Checkbox Field"
+                "title": "Checkbox Field"
             },
-            "radioCheckbox": "Radio Checkbox",
+            "radioCheckbox": "Checkbox",
             "user": "User"
         }
     }

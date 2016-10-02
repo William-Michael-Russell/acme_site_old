@@ -19,6 +19,7 @@
     <!-- build:css content/css/main.css -->
     <link rel="stylesheet" href="content/css/main.css">
     <!-- endbuild -->
+    <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.css">
 </head>
 <body ng-app="acmeSiteApp">
 <!--[if lt IE 9]>
@@ -61,7 +62,8 @@
     (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
     function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
     e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-    e.src='//www.google-analytics.com/analytics.js';
+zx    e.src='//www.google-analytics.com/analytics.js';
+
     r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
     ga('create','UA-XXXXX-X');ga('send','pageview');
 </script>-->
@@ -121,40 +123,6 @@
 <script src="app/layouts/navbar/active-menu.directive.js"></script>
 <script src="app/layouts/navbar/active-link.directive.js"></script>
 <script src="app/layouts/error/error.state.js"></script>
-<script src="app/components/util/truncate-words.filter.js"></script>
-<script src="app/components/util/truncate-characters.filter.js"></script>
-<script src="app/components/util/sort.directive.js"></script>
-<script src="app/components/util/sort-by.directive.js"></script>
-<script src="app/components/util/parse-links.service.js"></script>
-<script src="app/components/util/pagination-util.service.js"></script>
-<script src="app/components/util/jhi-item-count.directive.js"></script>
-<script src="app/components/util/date-util.service.js"></script>
-<script src="app/components/util/data-util.service.js"></script>
-<script src="app/components/util/capitalize.filter.js"></script>
-<script src="app/components/util/base64.service.js"></script>
-<script src="app/components/login/login.service.js"></script>
-<script src="app/components/login/login.controller.js"></script>
-<script src="app/components/language/language.service.js"></script>
-<script src="app/components/language/language.filter.js"></script>
-<script src="app/components/language/language.controller.js"></script>
-<script src="app/components/language/language.constants.js"></script>
-<script src="app/components/form/uib-pagination.config.js"></script>
-<script src="app/components/form/uib-pager.config.js"></script>
-<script src="app/components/form/show-validation.directive.js"></script>
-<script src="app/components/form/pagination.constants.js"></script>
-<script src="app/components/form/minbytes.directive.js"></script>
-<script src="app/components/form/maxbytes.directive.js"></script>
-<script src="app/components/extras/material-button.js"></script>
-<script src="app/components/alert/alert.service.js"></script>
-<script src="app/components/alert/alert.directive.js"></script>
-<script src="app/components/alert/alert-error.directive.js"></script>
-<script src="app/entities/video-upload/video-upload.state.js"></script>
-<script src="app/entities/video-upload/video-upload.service.js"></script>
-<script src="app/entities/video-upload/video-upload.search.service.js"></script>
-<script src="app/entities/video-upload/video-upload.controller.js"></script>
-<script src="app/entities/video-upload/video-upload-dialog.controller.js"></script>
-<script src="app/entities/video-upload/video-upload-detail.controller.js"></script>
-<script src="app/entities/video-upload/video-upload-delete-dialog.controller.js"></script>
 <script src="app/entities/text-inputs/text-inputs.state.js"></script>
 <script src="app/entities/text-inputs/text-inputs.service.js"></script>
 <script src="app/entities/text-inputs/text-inputs.search.service.js"></script>
@@ -162,13 +130,13 @@
 <script src="app/entities/text-inputs/text-inputs-dialog.controller.js"></script>
 <script src="app/entities/text-inputs/text-inputs-detail.controller.js"></script>
 <script src="app/entities/text-inputs/text-inputs-delete-dialog.controller.js"></script>
-<script src="app/entities/radio-checkbox-field/radio-checkbox-field.state.js"></script>
-<script src="app/entities/radio-checkbox-field/radio-checkbox-field.service.js"></script>
-<script src="app/entities/radio-checkbox-field/radio-checkbox-field.search.service.js"></script>
-<script src="app/entities/radio-checkbox-field/radio-checkbox-field.controller.js"></script>
-<script src="app/entities/radio-checkbox-field/radio-checkbox-field-dialog.controller.js"></script>
-<script src="app/entities/radio-checkbox-field/radio-checkbox-field-detail.controller.js"></script>
-<script src="app/entities/radio-checkbox-field/radio-checkbox-field-delete-dialog.controller.js"></script>
+<script src="app/entities/video-upload/video-upload.state.js"></script>
+<script src="app/entities/video-upload/video-upload.service.js"></script>
+<script src="app/entities/video-upload/video-upload.search.service.js"></script>
+<script src="app/entities/video-upload/video-upload.controller.js"></script>
+<script src="app/entities/video-upload/video-upload-dialog.controller.js"></script>
+<script src="app/entities/video-upload/video-upload-detail.controller.js"></script>
+<script src="app/entities/video-upload/video-upload-delete-dialog.controller.js"></script>
 <script src="app/entities/phone-number-input-field/phone-number-input-field.state.js"></script>
 <script src="app/entities/phone-number-input-field/phone-number-input-field.service.js"></script>
 <script src="app/entities/phone-number-input-field/phone-number-input-field.search.service.js"></script>
@@ -176,6 +144,13 @@
 <script src="app/entities/phone-number-input-field/phone-number-input-field-dialog.controller.js"></script>
 <script src="app/entities/phone-number-input-field/phone-number-input-field-detail.controller.js"></script>
 <script src="app/entities/phone-number-input-field/phone-number-input-field-delete-dialog.controller.js"></script>
+<script src="app/entities/radio-checkbox-field/radio-checkbox-field.state.js"></script>
+<script src="app/entities/radio-checkbox-field/radio-checkbox-field.service.js"></script>
+<script src="app/entities/radio-checkbox-field/radio-checkbox-field.search.service.js"></script>
+<script src="app/entities/radio-checkbox-field/radio-checkbox-field.controller.js"></script>
+<script src="app/entities/radio-checkbox-field/radio-checkbox-field-dialog.controller.js"></script>
+<script src="app/entities/radio-checkbox-field/radio-checkbox-field-detail.controller.js"></script>
+<script src="app/entities/radio-checkbox-field/radio-checkbox-field-delete-dialog.controller.js"></script>
 <script src="app/entities/password-input-field/password-input-field.state.js"></script>
 <script src="app/entities/password-input-field/password-input-field.service.js"></script>
 <script src="app/entities/password-input-field/password-input-field.search.service.js"></script>
@@ -211,13 +186,6 @@
 <script src="app/entities/email-input-field/email-input-field-dialog.controller.js"></script>
 <script src="app/entities/email-input-field/email-input-field-detail.controller.js"></script>
 <script src="app/entities/email-input-field/email-input-field-delete-dialog.controller.js"></script>
-<script src="app/entities/audio-upload/audio-upload.state.js"></script>
-<script src="app/entities/audio-upload/audio-upload.service.js"></script>
-<script src="app/entities/audio-upload/audio-upload.search.service.js"></script>
-<script src="app/entities/audio-upload/audio-upload.controller.js"></script>
-<script src="app/entities/audio-upload/audio-upload-dialog.controller.js"></script>
-<script src="app/entities/audio-upload/audio-upload-detail.controller.js"></script>
-<script src="app/entities/audio-upload/audio-upload-delete-dialog.controller.js"></script>
 <script src="app/entities/alpha-numeric-input-field/alpha-numeric-input-field.state.js"></script>
 <script src="app/entities/alpha-numeric-input-field/alpha-numeric-input-field.service.js"></script>
 <script src="app/entities/alpha-numeric-input-field/alpha-numeric-input-field.search.service.js"></script>
@@ -225,9 +193,43 @@
 <script src="app/entities/alpha-numeric-input-field/alpha-numeric-input-field-dialog.controller.js"></script>
 <script src="app/entities/alpha-numeric-input-field/alpha-numeric-input-field-detail.controller.js"></script>
 <script src="app/entities/alpha-numeric-input-field/alpha-numeric-input-field-delete-dialog.controller.js"></script>
+<script src="app/entities/audio-upload/audio-upload.state.js"></script>
+<script src="app/entities/audio-upload/audio-upload.service.js"></script>
+<script src="app/entities/audio-upload/audio-upload.search.service.js"></script>
+<script src="app/entities/audio-upload/audio-upload.controller.js"></script>
+<script src="app/entities/audio-upload/audio-upload-dialog.controller.js"></script>
+<script src="app/entities/audio-upload/audio-upload-detail.controller.js"></script>
+<script src="app/entities/audio-upload/audio-upload-delete-dialog.controller.js"></script>
+<script src="app/components/util/truncate-words.filter.js"></script>
+<script src="app/components/util/truncate-characters.filter.js"></script>
+<script src="app/components/util/sort.directive.js"></script>
+<script src="app/components/util/sort-by.directive.js"></script>
+<script src="app/components/util/parse-links.service.js"></script>
+<script src="app/components/util/pagination-util.service.js"></script>
+<script src="app/components/util/jhi-item-count.directive.js"></script>
+<script src="app/components/util/date-util.service.js"></script>
+<script src="app/components/util/data-util.service.js"></script>
+<script src="app/components/util/capitalize.filter.js"></script>
+<script src="app/components/util/base64.service.js"></script>
+<script src="app/components/login/login.service.js"></script>
+<script src="app/components/login/login.controller.js"></script>
+<script src="app/components/language/language.service.js"></script>
+<script src="app/components/language/language.filter.js"></script>
+<script src="app/components/language/language.controller.js"></script>
+<script src="app/components/language/language.constants.js"></script>
+<script src="app/components/form/uib-pagination.config.js"></script>
+<script src="app/components/form/uib-pager.config.js"></script>
+<script src="app/components/form/show-validation.directive.js"></script>
+<script src="app/components/form/pagination.constants.js"></script>
+<script src="app/components/form/minbytes.directive.js"></script>
+<script src="app/components/form/maxbytes.directive.js"></script>
+<script src="app/components/extras/material-button.js"></script>
 <script src="app/blocks/interceptor/notification.interceptor.js"></script>
 <script src="app/blocks/interceptor/errorhandler.interceptor.js"></script>
 <script src="app/blocks/interceptor/auth-expired.interceptor.js"></script>
+<script src="app/components/alert/alert.service.js"></script>
+<script src="app/components/alert/alert.directive.js"></script>
+<script src="app/components/alert/alert-error.directive.js"></script>
 <script src="app/blocks/handlers/translation.handler.js"></script>
 <script src="app/blocks/handlers/state.handler.js"></script>
 <script src="app/admin/user-management/user-management.state.js"></script>
@@ -283,6 +285,23 @@
 <script src="app/app.constants.js"></script>
 <!-- endinject -->
 <!-- endbuild -->
+
+<!-- Angular Material requires Angular.js Libraries -->
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-animate.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-aria.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-messages.min.js"></script>
+
+<!-- Angular Material Library -->
+<script src="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.js"></script>
+
+<!-- Your application bootstrap  -->
+<script type="text/javascript">
+    /**
+     * You must include the dependency on 'ngMaterial'
+     */
+    angular.module('ngMaterial');
+</script>
 
 </body>
 </html>

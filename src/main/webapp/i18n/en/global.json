@@ -17,7 +17,7 @@
                 "fileUpload": "File Upload",
                 "videoUpload": "Video Upload",
                 "audioUpload": "Audio Upload",
-                "radioCheckboxField": "Radio Checkbox Field",
+                "radioCheckboxField": "Checkbox Field",
                 "jhipster-needle-menu-add-entry": "JHipster will add additional entities here (do not translate!)"
             },
             "account": {

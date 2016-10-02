@@ -72,7 +72,7 @@ Browser Upgrade Prompt
     display: inline-block;
     width: 347px;
     height: 497px;
-    background: url("../images/acme_image.png") no-repeat center top;
+    background: url("../images/acme_site_index.png") no-repeat center top;
     background-size: contain;
 }
 
@@ -94,7 +94,7 @@ only screen and (        min-device-pixel-ratio: 2),
 only screen and (                min-resolution: 192dpi),
 only screen and (                min-resolution: 2dppx) {
     .hipster {
-        background: url("../images/inventory.png") no-repeat center top;
+        background: url("../images/acme_site_index.png") no-repeat center top;
         background-size: contain;
     }
 }
@@ -398,3 +398,37 @@ a > span{
     left: 7px;
     font-size: 14px;
     opacity: 0.54; }
+
+
+
+/*CUSTOM CSS*/
+/* ==========================================================================
+Logged in Ribbon
+========================================================================== */
+.not-logged-in-left {
+    position: absolute;
+    width: 149px;
+    height: 149px;
+    top: 0;
+    left: 0;
+    border: 0;
+    z-index: 1000;
+    background-image: url("../images/not-logged-in-left.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    pointer-events: none;
+}
+
+.not-logged-in-right {
+    position: absolute;
+    width: 149px;
+    height: 149px;
+    top: 0;
+    right: 0;
+    border: 0;
+    z-index: 1000;
+    background-image: url("../images/not-logged-in-right.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    pointer-events: none;
+}
