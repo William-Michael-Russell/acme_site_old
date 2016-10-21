@@ -1,0 +1,23 @@
+{
+    "acmeSiteApp": {
+        "checkboxField" : {
+            "home": {
+                "title": "CheckboxFields",
+                "createLabel": "नया Checkbox Field बनाएँ",
+                "createOrEditLabel": "Checkbox Field बनाएँ या संपादित करें",
+                "search": "Checkbox Field खोजें"
+            },
+            "created": "एक नया Checkbox Field [identifier: {{ param }}] तैयार है",
+            "updated": "एक Checkbox Field [identifier: {{ param }}] का अद्यतन हुआ है",
+            "deleted": "Checkbox Field [identifier: {{ param }}] हटा दिया है",
+            "delete": {
+                "question": "Checkbox Field [id: {{ id }}] हटाने की पुष्टि करें"
+            },
+            "detail": {
+                "title": "Checkbox Field"
+            },
+            "checkboxOption": "Checkbox Option",
+            "user": "User"
+        }
+    }
+}

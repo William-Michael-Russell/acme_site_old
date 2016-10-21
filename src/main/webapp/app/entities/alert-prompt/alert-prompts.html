@@ -1,0 +1,47 @@
+<script type="text/javascript">
+    var textToAlert;
+    var textToConfirm;
+    function onload() {
+        textToAlert = document.getElementById('textToAlert');
+        textToConfirm = document.getElementById('textToConfirm');
+    }
+    function alertText() {
+        alert(textToAlert.value);
+    }
+
+
+
+
+    function myConfirm(){
+        confirm(textToConfirm.value)
+    }
+</script>
+
+
+
+<div>
+    <h2 translate="acmeSiteApp.alertPrompt.home.title">Alert Prompts</h2>
+    <jhi-alert></jhi-alert>
+
+
+    <div class="container-fluid">
+
+        <h3>Simple Alert Dialog</h3>
+        <p>This shows a simple alert with only a close button.</p>
+        <div class="col-lg-6" onload="onload();">
+            <input type="text" name="enter" class="enter" value="" id="textToAlert"/>
+            <input type="button" value="Alert!" onclick="alertText();"/>
+        </div>
+    </div>
+
+
+    <div class="container-fluid">
+        <h3>Confirm Alert Dialog</h3>
+        <p>This will alert your text, and give cancel or OK options.</p>
+        <div class="col-lg-6" onload="onload();">
+            <input type="text" name="enter" class="enter" value="" id="textToConfirm"/>
+            <input type="button" value="Confirm!" onclick="myConfirm();"/>
+        </div>
+    </div>
+    <br/>
+</div>

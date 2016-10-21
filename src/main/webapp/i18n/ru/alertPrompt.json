@@ -1,0 +1,23 @@
+{
+    "acmeSiteApp": {
+        "alertPrompt" : {
+            "home": {
+                "title": "Alert Prompts",
+                "createLabel": "Создать новый Alert Prompt",
+                "createOrEditLabel": "Создать или отредактировать Alert Prompt",
+                "search": "Найти Alert Prompt"
+            },
+            "created": "Новый Alert Prompt создан с идентификатором {{ param }}",
+            "updated": "Alert Prompt обновлен с идентификатором {{ param }}",
+            "deleted": "Alert Prompt удален с идентификатором {{ param }}",
+            "delete": {
+                "question": "Вы уверены что хотите удалить Alert Prompt {{ id }}?"
+            },
+            "detail": {
+                "title": "Alert Prompt"
+            },
+            "alertName": "Alert Name",
+            "user": "User"
+        }
+    }
+}

@@ -1,0 +1,23 @@
+{
+    "acmeSiteApp": {
+        "checkboxField" : {
+            "home": {
+                "title": "Checkbox Fields",
+                "createLabel": "Создать новый Checkbox Field",
+                "createOrEditLabel": "Создать или отредактировать Checkbox Field",
+                "search": "Найти Checkbox Field"
+            },
+            "created": "Новый Checkbox Field создан с идентификатором {{ param }}",
+            "updated": "Checkbox Field обновлен с идентификатором {{ param }}",
+            "deleted": "Checkbox Field удален с идентификатором {{ param }}",
+            "delete": {
+                "question": "Вы уверены что хотите удалить Checkbox Field {{ id }}?"
+            },
+            "detail": {
+                "title": "Checkbox Field"
+            },
+            "checkboxOption": "Checkbox Option",
+            "user": "User"
+        }
+    }
+}

@@ -19,6 +19,8 @@
                 "audioUpload": "Audio Upload",
                 "radioCheckboxField": "Radio Checkbox Field",
                 "dropDownField": "Drop Down Field",
+                "checkboxField": "Checkbox Field",
+                "alertPrompt": "Alert Prompt",
                 "jhipster-needle-menu-add-entry": "JHipster will add additional entities here (do not translate!)"
             },
             "account": {

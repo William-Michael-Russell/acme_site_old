@@ -1,0 +1,24 @@
+{
+    "relationships": [
+        {
+            "relationshipName": "user",
+            "otherEntityName": "user",
+            "relationshipType": "many-to-one",
+            "otherEntityField": "login"
+        }
+    ],
+    "fields": [
+        {
+            "fieldName": "checkboxOption",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        }
+    ],
+    "changelogDate": "20161021174833",
+    "dto": "no",
+    "service": "no",
+    "entityTableName": "checkbox_field",
+    "pagination": "pager"
+}

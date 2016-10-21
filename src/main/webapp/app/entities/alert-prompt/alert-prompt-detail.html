@@ -1,0 +1,23 @@
+
+<div>
+    <h2><span translate="acmeSiteApp.alertPrompt.detail.title">Alert Prompt</span> {{vm.alertPrompt.id}}</h2>
+    <hr>
+    <dl class="dl-horizontal">
+        <dt><span translate="acmeSiteApp.alertPrompt.alertName">Alert Name</span></dt>
+        <dd>
+            <span>{{vm.alertPrompt.alertName}}</span>
+        </dd>
+        <hr>
+        <dt><span translate="acmeSiteApp.alertPrompt.user">User</span></dt>
+        <dd>
+            {{vm.alertPrompt.user.login}}
+        </dd>
+        <hr>
+    </dl>
+
+    <button type="submit"
+            onclick="window.history.back()"
+            class="btn btn-info">
+        <span class="glyphicon glyphicon-arrow-left"></span>&nbsp;<span translate="entity.action.back"> Back</span>
+    </button>
+</div>

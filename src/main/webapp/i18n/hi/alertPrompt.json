@@ -1,0 +1,23 @@
+{
+    "acmeSiteApp": {
+        "alertPrompt" : {
+            "home": {
+                "title": "AlertPrompts",
+                "createLabel": "नया Alert Prompt बनाएँ",
+                "createOrEditLabel": "Alert Prompt बनाएँ या संपादित करें",
+                "search": "Alert Prompt खोजें"
+            },
+            "created": "एक नया Alert Prompt [identifier: {{ param }}] तैयार है",
+            "updated": "एक Alert Prompt [identifier: {{ param }}] का अद्यतन हुआ है",
+            "deleted": "Alert Prompt [identifier: {{ param }}] हटा दिया है",
+            "delete": {
+                "question": "Alert Prompt [id: {{ id }}] हटाने की पुष्टि करें"
+            },
+            "detail": {
+                "title": "Alert Prompt"
+            },
+            "alertName": "Alert Name",
+            "user": "User"
+        }
+    }
+}

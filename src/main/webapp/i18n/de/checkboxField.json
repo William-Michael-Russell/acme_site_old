@@ -1,0 +1,23 @@
+{
+    "acmeSiteApp": {
+        "checkboxField" : {
+            "home": {
+                "title": "Checkbox Fields",
+                "createLabel": "Checkbox Field erstellen",
+                "createOrEditLabel": "Checkbox Field erstellen oder bearbeiten",
+                "search": "Suche nach Checkbox Field"
+            },
+            "created": "Checkbox Field erstellt mit ID {{ param }}",
+            "updated": "Checkbox Field aktualisiert mit ID {{ param }}",
+            "deleted": "Checkbox Field gelöscht mit ID {{ param }}",
+            "delete": {
+                "question": "Soll Checkbox Field {{ id }} wirklich dauerhaft gejöscht werden?"
+            },
+            "detail": {
+                "title": "Checkbox Field"
+            },
+            "checkboxOption": "Checkbox Option",
+            "user": "User"
+        }
+    }
+}

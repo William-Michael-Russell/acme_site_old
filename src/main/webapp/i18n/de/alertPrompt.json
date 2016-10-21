@@ -1,0 +1,23 @@
+{
+    "acmeSiteApp": {
+        "alertPrompt" : {
+            "home": {
+                "title": "Alert Prompts",
+                "createLabel": "Alert Prompt erstellen",
+                "createOrEditLabel": "Alert Prompt erstellen oder bearbeiten",
+                "search": "Suche nach Alert Prompt"
+            },
+            "created": "Alert Prompt erstellt mit ID {{ param }}",
+            "updated": "Alert Prompt aktualisiert mit ID {{ param }}",
+            "deleted": "Alert Prompt gelöscht mit ID {{ param }}",
+            "delete": {
+                "question": "Soll Alert Prompt {{ id }} wirklich dauerhaft gejöscht werden?"
+            },
+            "detail": {
+                "title": "Alert Prompt"
+            },
+            "alertName": "Alert Name",
+            "user": "User"
+        }
+    }
+}

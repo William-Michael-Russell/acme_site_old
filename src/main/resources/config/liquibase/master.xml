@@ -17,6 +17,8 @@
     <include file="classpath:config/liquibase/changelog/20160919021355_added_entity_AudioUpload.xml" relativeToChangelogFile="false"/>
     <include file="classpath:config/liquibase/changelog/20160919022106_added_entity_RadioCheckboxField.xml" relativeToChangelogFile="false"/>
     <include file="classpath:config/liquibase/changelog/20161021164119_added_entity_DropDownField.xml" relativeToChangelogFile="false"/>
+    <include file="classpath:config/liquibase/changelog/20161021174833_added_entity_CheckboxField.xml" relativeToChangelogFile="false"/>
+    <include file="classpath:config/liquibase/changelog/20161021180533_added_entity_AlertPrompt.xml" relativeToChangelogFile="false"/>
     <!-- jhipster-needle-liquibase-add-changelog - JHipster will add liquibase changelogs here -->
     <include file="classpath:config/liquibase/changelog/20160918034533_added_entity_constraints_EmailInputField.xml" relativeToChangelogFile="false"/>
     <include file="classpath:config/liquibase/changelog/20160918053830_added_entity_constraints_PhoneNumberInputField.xml" relativeToChangelogFile="false"/>
@@ -29,5 +31,7 @@
     <include file="classpath:config/liquibase/changelog/20160919021355_added_entity_constraints_AudioUpload.xml" relativeToChangelogFile="false"/>
     <include file="classpath:config/liquibase/changelog/20160919022106_added_entity_constraints_RadioCheckboxField.xml" relativeToChangelogFile="false"/>
     <include file="classpath:config/liquibase/changelog/20161021164119_added_entity_constraints_DropDownField.xml" relativeToChangelogFile="false"/>
+    <include file="classpath:config/liquibase/changelog/20161021174833_added_entity_constraints_CheckboxField.xml" relativeToChangelogFile="false"/>
+    <include file="classpath:config/liquibase/changelog/20161021180533_added_entity_constraints_AlertPrompt.xml" relativeToChangelogFile="false"/>
     <!-- jhipster-needle-liquibase-add-constraints-changelog - JHipster will add liquibase constraints changelogs here -->
 </databaseChangeLog>
