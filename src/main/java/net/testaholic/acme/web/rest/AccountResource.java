@@ -82,8 +82,7 @@ public class AccountResource {
                     request.getServerPort() +              // "80"
                     request.getContextPath();              // "/myContextPath" or "" if deployed in root context
 
-//                    mailService.sendActivationEmail(user, baseUrl);
-//                    userRepository.save(user);
+                    mailService.sendActivationEmail(user, baseUrl);
                     return new ResponseEntity<>(HttpStatus.CREATED);
                 })
         );
