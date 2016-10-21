@@ -72,7 +72,7 @@ public class AccountResource {
             .orElseGet(() -> userRepository.findOneByEmail(managedUserDTO.getEmail())
                 .map(user -> new ResponseEntity<>("e-mail address already in use", textPlainHeaders, HttpStatus.BAD_REQUEST))
                 .orElseGet(() -> {
-                    User user = userService.createUserInformation(managedUserDTO.getLogin(), managedUserDTO.getPassword(),
+                    User user = userService.createUserInformation(managedUserDTO.getLogin().toLowerCase(), managedUserDTO.getPassword(),
                     managedUserDTO.getFirstName(), managedUserDTO.getLastName(), managedUserDTO.getEmail().toLowerCase(),
                     managedUserDTO.getLangKey());
                     String baseUrl = request.getScheme() + // "http"
@@ -82,7 +82,8 @@ public class AccountResource {
                     request.getServerPort() +              // "80"
                     request.getContextPath();              // "/myContextPath" or "" if deployed in root context
 
-                    mailService.sendActivationEmail(user, baseUrl);
+//                    mailService.sendActivationEmail(user, baseUrl);
+//                    userRepository.save(user);
                     return new ResponseEntity<>(HttpStatus.CREATED);
                 })
         );
