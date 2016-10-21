@@ -1,0 +1,23 @@
+{
+    "acmeSiteApp": {
+        "dropDownField" : {
+            "home": {
+                "title": "Drop Down Fields",
+                "createLabel": "Create a new Drop Down Field",
+                "createOrEditLabel": "Create or edit a Drop Down Field",
+                "search": "Search for Drop Down Field"
+            },
+            "created": "A new Drop Down Field is created with identifier {{ param }}",
+            "updated": "A Drop Down Field is updated with identifier {{ param }}",
+            "deleted": "A Drop Down Field is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete Drop Down Field {{ id }}?"
+            },
+            "detail": {
+                "title": "Drop Down Field"
+            },
+            "weaponName": "Weapon Name",
+            "user": "User"
+        }
+    }
+}

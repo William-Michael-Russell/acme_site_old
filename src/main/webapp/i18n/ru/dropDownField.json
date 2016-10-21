@@ -1,0 +1,23 @@
+{
+    "acmeSiteApp": {
+        "dropDownField" : {
+            "home": {
+                "title": "Drop Down Fields",
+                "createLabel": "Создать новый Drop Down Field",
+                "createOrEditLabel": "Создать или отредактировать Drop Down Field",
+                "search": "Найти Drop Down Field"
+            },
+            "created": "Новый Drop Down Field создан с идентификатором {{ param }}",
+            "updated": "Drop Down Field обновлен с идентификатором {{ param }}",
+            "deleted": "Drop Down Field удален с идентификатором {{ param }}",
+            "delete": {
+                "question": "Вы уверены что хотите удалить Drop Down Field {{ id }}?"
+            },
+            "detail": {
+                "title": "Drop Down Field"
+            },
+            "weaponName": "Weapon Name",
+            "user": "User"
+        }
+    }
+}

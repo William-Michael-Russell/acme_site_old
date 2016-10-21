@@ -1,0 +1,23 @@
+
+<div>
+    <h2><span translate="acmeSiteApp.dropDownField.detail.title">Drop Down Field</span> {{vm.dropDownField.id}}</h2>
+    <hr>
+    <dl class="dl-horizontal">
+        <dt><span translate="acmeSiteApp.dropDownField.weaponName">Weapon Name</span></dt>
+        <dd>
+            <span>{{vm.dropDownField.weaponName}}</span>
+        </dd>
+        <hr>
+        <dt><span translate="acmeSiteApp.dropDownField.user">User</span></dt>
+        <dd>
+            {{vm.dropDownField.user.login}}
+        </dd>
+        <hr>
+    </dl>
+
+    <button type="submit"
+            onclick="window.history.back()"
+            class="btn btn-info">
+        <span class="glyphicon glyphicon-arrow-left"></span>&nbsp;<span translate="entity.action.back"> Back</span>
+    </button>
+</div>

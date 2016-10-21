@@ -1,0 +1,23 @@
+{
+    "acmeSiteApp": {
+        "dropDownField" : {
+            "home": {
+                "title": "DropDownFields",
+                "createLabel": "नया Drop Down Field बनाएँ",
+                "createOrEditLabel": "Drop Down Field बनाएँ या संपादित करें",
+                "search": "Drop Down Field खोजें"
+            },
+            "created": "एक नया Drop Down Field [identifier: {{ param }}] तैयार है",
+            "updated": "एक Drop Down Field [identifier: {{ param }}] का अद्यतन हुआ है",
+            "deleted": "Drop Down Field [identifier: {{ param }}] हटा दिया है",
+            "delete": {
+                "question": "Drop Down Field [id: {{ id }}] हटाने की पुष्टि करें"
+            },
+            "detail": {
+                "title": "Drop Down Field"
+            },
+            "weaponName": "Weapon Name",
+            "user": "User"
+        }
+    }
+}

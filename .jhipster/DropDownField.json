@@ -1,0 +1,24 @@
+{
+    "relationships": [
+        {
+            "relationshipName": "user",
+            "otherEntityName": "user",
+            "relationshipType": "many-to-one",
+            "otherEntityField": "login"
+        }
+    ],
+    "fields": [
+        {
+            "fieldName": "weaponName",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        }
+    ],
+    "changelogDate": "20161021164119",
+    "dto": "no",
+    "service": "no",
+    "entityTableName": "drop_down_field",
+    "pagination": "pager"
+}
