@@ -139,3 +139,4 @@ Desktop.ini
 ####################
 application-prod.yml
 application-dev.yml
+application.yml
